@@ -8,12 +8,29 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "_moduleAliases": {
+    "@root": ".",
+    "@Components": "./src/components/index.js",
+    "@Actions": "./src/store/actions.js",
+    "@Store": "./src/store/index.js",
+    "@API": "./src/network/apis/APIs.js",
+    "@Config": "./src/config/index.js"
+  },
   "dependencies": {
     "@next/font": "13.1.2",
-    "eslint": "8.32.0",
+    "@reduxjs/toolkit": "^1.9.1",
+    "axios": "^1.2.2",
     "eslint-config-next": "13.1.2",
     "next": "13.1.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-redux": "^8.0.5"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.0"
   }
 }
